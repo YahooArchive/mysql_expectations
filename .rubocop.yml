@@ -1,0 +1,7 @@
+Style/Copyright:
+  Enabled: true
+  Notice: 'Copyright \(c\) 20[1-3][0-9] Yahoo Inc\.'
+  AutocorrectNotice: "# Copyright (c) 2015 Yahoo Inc.\n# Copyrights licensed under the New BSD License.\n# See the accompanying LICENSE file for terms.\n"
+
+Metrics/LineLength:
+  Max: 100
