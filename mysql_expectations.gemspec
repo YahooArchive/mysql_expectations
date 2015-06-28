@@ -34,4 +34,5 @@ Gem::Specification.new do |s|
   s.add_development_dependency 'aruba', '~> 0'
   s.add_development_dependency 'relish', '~> 0'
   s.add_development_dependency 'rake', '~> 10.4'
+  s.add_development_dependency 'codeclimate-test-reporter'
 end
