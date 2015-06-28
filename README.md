@@ -1,6 +1,6 @@
 [![Build Status](https://travis-ci.org/yahoo/mysql_expectations.svg?branch=master)](https://travis-ci.org/yahoo/mysql_expectations)
+[![Coverage Status](http://img.shields.io/coveralls/yahoo/mysql_expectations/master.svg)](https://coveralls.io/r/yahoo/mysql_expectations)
 [![Code Climate](https://codeclimate.com/github/yahoo/mysql_expectations/badges/gpa.svg)](https://codeclimate.com/github/yahoo/mysql_expectations)
-[![Test Coverage](https://codeclimate.com/github/yahoo/mysql_expectations/badges/coverage.svg)](https://codeclimate.com/github/yahoo/mysql_expectations/coverage)
 
 # MySQL Expectations
 
