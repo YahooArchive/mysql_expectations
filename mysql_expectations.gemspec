@@ -26,7 +26,6 @@ Gem::Specification.new do |s|
   s.add_runtime_dependency 'rspec', '~> 3'
 
   s.add_development_dependency 'mustache', '~> 1'
-  s.add_development_dependency 'rspec', '~> 3'
   s.add_development_dependency 'rspec-collection_matchers', '~> 1'
   s.add_development_dependency 'rubocop', '~> 0'
   s.add_development_dependency 'cucumber', '~> 1'
