@@ -17,3 +17,4 @@ deploy:
   on:
     tags: true
     repo: yahoo/mysql_expectations
+  skip_cleanup: true
