@@ -26,10 +26,10 @@ describe MySQL do
         )
       end
       it 'should raise an exception when called with args' do
-        expect { subject.order_tracking(1) }.to raise_error
+        expect { subject.order_tracking(1) }.to raise_error NoMethodError
       end
       it 'should raise an exception when called with a block' do
-        expect { subject.order_tracking {} }.to raise_error
+        expect { subject.order_tracking {} }.to raise_error NoMethodError
       end
     end
 

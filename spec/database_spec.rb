@@ -29,10 +29,10 @@ describe Database do
         expect(subject.item).to be_an_instance_of(Table)
       end
       it 'should raise an exception when called with args' do
-        expect { subject.item(1) }.to raise_error
+        expect { subject.item(1) }.to raise_error NoMethodError
       end
       it 'should raise an exception when called with a block' do
-        expect { subject.item {} }.to raise_error
+        expect { subject.item {} }.to raise_error NoMethodError
       end
     end
 

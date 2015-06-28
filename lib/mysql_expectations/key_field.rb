@@ -45,7 +45,7 @@ module MySQLExpectations
       begin
         length = Integer(length)
       rescue ArgumentError
-        raise 'length must be an integer or convertable to an integer'
+        raise ArgumentError.new('length must be an integer or convertable to an integer')
       end
       length
     end
@@ -53,7 +53,7 @@ module MySQLExpectations
     def validate_order(order)
       return nil if order.nil?
       return order if VALID_ORDERINGS.include? order
-      fail 'Order must be either KeyField::ORDER_ASC or KeyField::ORDER_DESC'
+      fail ArgumentError.new('Order must be either KeyField::ORDER_ASC or KeyField::ORDER_DESC')
     end
   end
 end

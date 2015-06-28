@@ -84,7 +84,7 @@ describe KeyField do
     it 'should throw an exception during initialization' do
       expect do
         KeyField.new('id', :asdf)
-      end.to raise_error
+      end.to raise_error ArgumentError
     end
   end
 
@@ -100,7 +100,7 @@ describe KeyField do
     it 'should not throw an error during initialization' do
       expect do
         KeyField.new('id', KeyField::ORDER_ASC, 'forty')
-      end.to raise_error
+      end.to raise_error ArgumentError
     end
   end
 end
