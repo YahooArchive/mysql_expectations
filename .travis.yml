@@ -8,3 +8,12 @@ rvm:
 addons:
   code_climate:
     repo_token: d814b23d478d0908ef37c1c0aa685fdb0c6d5f0b38d8db0c68e58fd86a1f0fea
+
+deploy:
+  provider: rubygems
+  api_key:
+    secure: FRfLiIpVe7kn9hfpbgxvJlmPRRZU1Q/DDWg5yPtvwmBPfz/fesOuPlu89FjhEKN+1ZEsOctb+I1+6KfsyYngHGCP3e3z6bF3WGKWhFBTsFGPv1uwXZborzKQfORKbJx/g0KuN82fBm0yey2joBvRt8icKvtSsHXQi5eNfL9ZBHviNv2tblDzsQ2V7d2DLKP1W8JeYpHLF0LeKl18LWPnBTQJGkmikJra+eANH+DvwjGEXBCn4WuarlX57K4kW2//iIL9WVcAmZsl1q4PGZQdZSyBXHxmIfriKXk7nP6XsRDnBujiLrQDxlogpIAsdyUm5rJ3FjgWF2GO6UjupnYqlAu4dDKs1vPVzmX6lJDnBShYnyPabPbhLbGvtdsd6iK/0IxDjcoi9V7E0wO4V0TkrrDoZDRyDWYzjrYsAbP8M5BmFxzloU0OYLnVjk21JaN6kDDvLRSaYl1Ta56FKnY8gCxpKFj7+2XP4kGAUwfX1vu4qAGUl/9V+m9bYmE7AE0xlA2OyxoZgi1I/u/9EzRdhToeHol4lJ+TFZyoWe71bkTp8ay4O2Ef4XtcAC0/VS32rd39C3MUksZVw1wUwoCMe9ri6QJxd5+ev9iZGGrUbAO1ZfyOv9USB8CUkKZ+VYpqgFMEHBx3rW0VqcSRDEZpByhuDPKt/rzAPra25TanIWY=
+  gem: mysql_expectations
+  on:
+    tags: true
+    repo: yahoo/mysql_expectations
