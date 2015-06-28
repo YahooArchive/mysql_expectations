@@ -33,13 +33,11 @@ RSpec::Core::RakeTask.new
 
 RuboCop::RakeTask.new
 
-Cucumber::Rake::Task.new
+Cucumber::Rake::Task.new do |t|
+  t.cucumber_opts = %w(--format progress)
+end
 
 Coveralls::RakeTask.new
-
-Cucumber::Rake::Task.new do |t|
-  t.cucumber_opts = %w{--format progress}
-end
 
 desc 'By default run clean, rspec tests, rubocop, and cucumber tests.'
 task default: [:clean, :spec, :rubocop, :cucumber, 'coveralls:push']
