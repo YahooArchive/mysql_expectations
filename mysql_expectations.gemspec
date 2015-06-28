@@ -29,10 +29,10 @@ Gem::Specification.new do |s|
   s.add_development_dependency 'rspec', '~> 3'
   s.add_development_dependency 'rspec-collection_matchers', '~> 1'
   s.add_development_dependency 'rubocop', '~> 0'
-  s.add_development_dependency 'simplecov', '~> 0'
   s.add_development_dependency 'cucumber', '~> 1'
   s.add_development_dependency 'aruba', '~> 0'
   s.add_development_dependency 'relish', '~> 0'
   s.add_development_dependency 'rake', '~> 10.4'
-  s.add_development_dependency 'codeclimate-test-reporter'
+  s.add_development_dependency 'simplecov'
+  s.add_development_dependency 'coveralls'
 end
