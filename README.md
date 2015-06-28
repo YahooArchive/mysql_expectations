@@ -1,3 +1,5 @@
+[![Build Status](https://travis-ci.org/yahoo/mysql_expectations.svg?branch=master)](https://travis-ci.org/yahoo/mysql_expectations)
+
 # MySQL Expectations
 
 The `mysql_expectations` gem makes it easy to write RSpec expectations for MySQL 
