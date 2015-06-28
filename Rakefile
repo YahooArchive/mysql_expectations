@@ -17,6 +17,7 @@ require 'rake'
 require 'rspec/core/rake_task'
 require 'rubocop/rake_task'
 require 'cucumber/rake/task'
+require 'coveralls/rake/task'
 
 desc 'Clean up build artifacts.'
 task :clean do
@@ -34,8 +35,10 @@ RuboCop::RakeTask.new
 
 Cucumber::Rake::Task.new
 
+Coveralls::RakeTask.new
+
 desc 'By default run clean, rspec tests, rubocop, and cucumber tests.'
-task default: [:clean, :spec, :rubocop, :cucumber]
+task default: [:clean, :spec, :rubocop, :cucumber, 'coveralls:push']
 
 desc 'Run the irb console and require mysql_expectations.'
 task :console do

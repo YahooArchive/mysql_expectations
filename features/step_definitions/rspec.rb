@@ -8,6 +8,7 @@ Given(/^the rspec template for "(.*?)":$/) do |rspec_file, rspec_template|
   @rspec_file = rspec_file
   enable_code_coverage = <<-RUBY
       require 'simplecov'
+
       SimpleCov.root('../..')
 
       # make SimpleCov treat each invocation of rspec like a
@@ -17,6 +18,7 @@ Given(/^the rspec template for "(.*?)":$/) do |rspec_file, rspec_template|
       #
       SimpleCov.command_name "cucumber:scenario:#{@scenario_name}"
 
+      SimpleCov.formatter = SimpleCov::Formatter::HTMLFormatter
       SimpleCov.start
   RUBY
   @rspec_template = enable_code_coverage + rspec_template
