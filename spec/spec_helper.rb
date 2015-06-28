@@ -2,8 +2,8 @@
 # Copyrights licensed under the New BSD License.
 # See the accompanying LICENSE file for terms.
 
-require 'simplecov'
-SimpleCov.start
+require "codeclimate-test-reporter"
+CodeClimate::TestReporter.start
 
 require 'mysql_expectations'
 
