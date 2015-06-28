@@ -45,10 +45,10 @@ describe Table do
         expect(subject.id).to be_an_instance_of(Field)
       end
       it 'should raise an exception when called with args' do
-        expect { subject.id(1) }.to raise_error
+        expect { subject.id(1) }.to raise_error NoMethodError
       end
       it 'should raise an exception when called with a block' do
-        expect { subject.id {} }.to raise_error
+        expect { subject.id {} }.to raise_error NoMethodError
       end
     end
 
