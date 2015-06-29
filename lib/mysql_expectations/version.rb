@@ -5,6 +5,6 @@
 module MySQLExpectations
   # This module holds the gem version number used in the gemspec
   module Version
-    VERSION = '1.0.0'
+    VERSION = '1.0.1'
   end
 end

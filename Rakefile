@@ -52,17 +52,20 @@ task :console do
 end
 
 RELISH_PROJECT = 'mysql-expectations/mysql-expectations'
-RELISH_STAGING_PROJECT = 'mysql-expectations-staging/mysql-expectations'
+RELISH_STAGING_PROJECT = 'mysql-expectations/mysql-expectations-staging'
+
+require 'mysql_expectations/version'
 
 desc 'Push cucumber features to http://relishapp.com'
-task :relish, :version do |_t, args|
-  fail 'rake relish[VERSION]' unless args[:version]
-  if `relish versions #{RELISH_PROJECT}`.split.map(&:strip).include? args[:version]
-    puts "Version #{args[:version]} already exists"
+task :relish do
+  version = MySQLExpectations::Version::VERSION
+  fail 'rake relish[VERSION]' unless version
+  if `relish versions #{RELISH_PROJECT}`.split.map(&:strip).include? version
+    puts "Version #{version} already exists"
   else
-    sh "relish versions:add #{RELISH_PROJECT}:#{args[:version]}"
+    sh "relish versions:add #{RELISH_PROJECT}:#{version}"
   end
-  sh "relish push #{RELISH_PROJECT}:#{args[:version]}"
+  sh "relish push #{RELISH_PROJECT}:#{version}"
 end
 
 desc 'Push to relish staging environment of http://relishapp.com'
