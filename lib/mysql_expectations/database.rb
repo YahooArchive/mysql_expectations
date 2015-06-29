@@ -2,7 +2,7 @@
 # Copyrights licensed under the New BSD License.
 # See the accompanying LICENSE file for terms.
 
-require_relative 'table'
+require 'mysql_expectations/table'
 
 module MySQLExpectations
   # Allows assertions on a database

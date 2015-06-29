@@ -3,7 +3,7 @@
 # See the accompanying LICENSE file for terms.
 
 require 'rexml/document'
-require_relative 'database'
+require 'mysql_expectations/database'
 
 module MySQLExpectations
   # The database_structure_file should be an XML file resulting from the

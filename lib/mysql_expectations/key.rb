@@ -2,7 +2,7 @@
 # Copyrights licensed under the New BSD License.
 # See the accompanying LICENSE file for terms.
 
-require_relative 'key_field'
+require 'mysql_expectations/key_field'
 
 module MySQLExpectations
   # An table key has a name and a sequence of index fields.

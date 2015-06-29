@@ -2,8 +2,8 @@
 # Copyrights licensed under the New BSD License.
 # See the accompanying LICENSE file for terms.
 
-require_relative 'field'
-require_relative 'key'
+require 'mysql_expectations/field'
+require 'mysql_expectations/key'
 
 module MySQLExpectations
   # Allows assertions on a table

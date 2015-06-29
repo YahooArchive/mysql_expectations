@@ -2,7 +2,7 @@
 # Copyrights licensed under the New BSD License.
 # See the accompanying LICENSE file for terms.
 
-require_relative '../array_refinements'
+require 'mysql_expectations/array_refinements'
 
 module MySQLExpectations
   module Matchers
