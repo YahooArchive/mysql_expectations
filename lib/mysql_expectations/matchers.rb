@@ -2,12 +2,12 @@
 # Copyrights licensed under the New BSD License.
 # See the accompanying LICENSE file for terms.
 
-require_relative 'matchers/database_have_table'
-require_relative 'matchers/database_only_have_tables'
-require_relative 'matchers/table_have_collation'
-require_relative 'matchers/table_have_engine_type'
-require_relative 'matchers/table_have_field'
-require_relative 'matchers/table_have_key'
+require 'mysql_expectations/matchers/database_have_table'
+require 'mysql_expectations/matchers/database_only_have_tables'
+require 'mysql_expectations/matchers/table_have_collation'
+require 'mysql_expectations/matchers/table_have_engine_type'
+require 'mysql_expectations/matchers/table_have_field'
+require 'mysql_expectations/matchers/table_have_key'
 
 # rubocop:disable Style/PredicateName
 

@@ -2,15 +2,15 @@
 # Copyrights licensed under the New BSD License.
 # See the accompanying LICENSE file for terms.
 
-require_relative 'mysql_expectations/array_refinements'
-require_relative 'mysql_expectations/mysql'
-require_relative 'mysql_expectations/database'
-require_relative 'mysql_expectations/table'
-require_relative 'mysql_expectations/field'
-require_relative 'mysql_expectations/key'
-require_relative 'mysql_expectations/key_field'
-require_relative 'mysql_expectations/matchers'
-require_relative 'mysql_expectations/version'
+require 'mysql_expectations/array_refinements'
+require 'mysql_expectations/mysql'
+require 'mysql_expectations/database'
+require 'mysql_expectations/table'
+require 'mysql_expectations/field'
+require 'mysql_expectations/key'
+require 'mysql_expectations/key_field'
+require 'mysql_expectations/matchers'
+require 'mysql_expectations/version'
 
 require 'rspec'
 

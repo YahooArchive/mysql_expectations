@@ -4,7 +4,7 @@
 
 lib = File.expand_path('../lib/', __FILE__)
 $LOAD_PATH.unshift lib unless $LOAD_PATH.include?(lib)
-require_relative 'lib/mysql_expectations/version'
+require 'mysql_expectations/version'
 
 Gem::Specification.new do |s|
   s.name        = 'mysql_expectations'
