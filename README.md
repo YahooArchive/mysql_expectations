@@ -1,3 +1,4 @@
+[![Gem Version](https://badge.fury.io/rb/mysql_expectations.svg)](http://badge.fury.io/rb/mysql_expectations)
 [![Build Status](https://travis-ci.org/yahoo/mysql_expectations.svg?branch=master)](https://travis-ci.org/yahoo/mysql_expectations)
 [![Coverage Status](http://img.shields.io/coveralls/yahoo/mysql_expectations/master.svg)](https://coveralls.io/r/yahoo/mysql_expectations)
 [![Code Climate](https://codeclimate.com/github/yahoo/mysql_expectations/badges/gpa.svg)](https://codeclimate.com/github/yahoo/mysql_expectations)
