@@ -5,6 +5,8 @@
 
 # MySQL Expectations
 
+**Please Note**: This project has a known security vulnerability. Use at your own risk!
+
 The `mysql_expectations` gem makes it easy to write RSpec expectations for MySQL 
 schemas and data.
 
